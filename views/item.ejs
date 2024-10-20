@@ -1,0 +1,13 @@
+<%-include("header")%>
+<div class="container mt-5">
+    <h2>Item List</h2>
+    <ul class="list-group">
+        <% items.forEach((item)=>{%>
+        <li class="list-group-item">
+            <strong><%=item.title%>:</strong><%=item.description%>
+        </li>
+
+        <%});%>
+    </ul>
+</div>
+<%-include("footer")%>
